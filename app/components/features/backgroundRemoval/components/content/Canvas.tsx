@@ -119,11 +119,7 @@ export const Canvas = React.forwardRef<React.ElementRef<'canvas'>, CanvasProps>(
         {...rest}
         ref={mergeRefs(canvasRef, ref)}
       />
-      {IS_DEV && (
-        <button type="button" className="absolute bottom-20 right-20" onClick={test}>
-          Test
-        </button>
-      )}
+     
     </>
   );
 });

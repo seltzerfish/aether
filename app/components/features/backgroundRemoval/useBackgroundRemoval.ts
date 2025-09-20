@@ -179,7 +179,7 @@ export const useBackgroundRemoval = (props: UseBackgroundRemovalProps) => {
       event.preventDefault();
       const data = Object.fromEntries(new FormData(event.currentTarget));
 
-      const type = data.type as 'quantized' | 'full' | undefined;
+      const type = 'full';
 
       await inference(type);
     },

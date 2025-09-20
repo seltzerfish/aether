@@ -54,11 +54,6 @@ export const Bar = React.forwardRef<React.ElementRef<'div'>, BarProps>(({ classN
             <RotateCcw />
           </Button>
         </div>
-        <RadioGroup isDisabled={isInferencing} name="type" aria-labelledby="id" defaultValue="quantized">
-          <Label>Quality</Label>
-          <Radio value="quantized">Normal</Radio>
-          <Radio value="full">High</Radio>
-        </RadioGroup>
         {/* 
         <RadioGroup isDisabled aria-labelledby="id" defaultValue="cpu">
           <Label>Device</Label>
