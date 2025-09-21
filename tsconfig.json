@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler", // ← Changed from "node"
     "resolveJsonModule": true,
     "target": "ES2022",
     "strict": true,
@@ -21,7 +21,6 @@
       "~shared/*": ["./app/components/shared/*"],
       "~/*": ["./*"]
     },
-    // Remix takes care of building everything in `remix build`.
     "noEmit": true
   }
 }
